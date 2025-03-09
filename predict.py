@@ -33,9 +33,10 @@ def plot_graph(theta0, theta1, min_x, max_x, min_y, max_y):
                         min_y for y in predicted_prices_norm]
 
     accurancy = r2_manual(y_values, predicted_prices)
-    print(f"Accuracy: {accurancy:.2f}")
+    print(f"Accuracy: {accurancy:.2f}%")
 
-    plt.figure(figsize=(8, 6))
+    fig = plt.figure(figsize=(8, 6))
+    fig.canvas.manager.set_window_title("Mileage-Price Regression")
     plt.scatter(x_values, y_values, color="blue", label="Actual Data")
     plt.plot(x_values, predicted_prices, color="red", label="Regression Line")
 
