@@ -1,0 +1,13 @@
+
+list = [5]
+helper = 0
+
+loop(1000)
+	
+	error = 0
+
+	for _ in list
+		predicted_value = helper
+		error = 5 - predicted value (error = 5)
+		
+	helper = helper + (error * 0.001)		
