@@ -1,0 +1,45 @@
+sold_cars:
+
+s_monday:10
+s_tuesday:15
+s_wednesday:20
+s_thursday:25
+s_friday:30
+
+predicted_values:
+
+p_monday:12
+p_tuesday:14
+p_wednesday:19
+p_thursday:26
+p_friday:31
+_____________________________________________________________
+
+y_mean = (s_monday + s_tuesday + s_wednesday + s_thursday + s_friday) / 5
+y_mean = (10 + 15 + 20 + 25 + 30) / 5
+y_mean = 20
+
+
+SS_TOTAL =  (s_monday - y_mean)² + (s_tuesday - y_mean)² +
+            (s_wednesday - y_mean)² + (s_thursday - y_mean)² +
+            (s_friday - y_mean)²
+
+        =  (10 - 20)² + (15 - 20)² + (20 - 20)² + (25 - 20)² + (30 - 20)²
+        =  100 + 25 + 0 + 25 + 100
+        =  250
+
+SS_residual =  (s_monday - p_monday)² + (s_tuesday - p_tuesday)² +
+               (s_wednesday - p_wednesday)² + (s_thursday - p_thursday)² +
+               (s_friday - p_friday)²
+
+           =  (10 - 12)² + (15 - 14)² + (20 - 19)² + (25 - 26)² + (30 - 31)²
+           =  4 + 1 + 1 + 1 + 1
+           =  8
+
+R² = 1 - (SS_residual / SS_TOTAL)
+R² = 1 - (8 / 250)
+R² = 1 - 0.032
+R² = 0.968
+
+Accuracy = 0.968 * 100 = 96.8%
+
