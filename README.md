@@ -1,2 +1,2 @@
-![image](https://github.com/user-attachments/assets/5b8548f9-5a6c-453d-bf22-bf334e446ddd)
-# ft_linear_regression
+![image](https://github.com/user-attachments/assets/cd11af19-fc39-4339-8963-1ec53d1cb0d0)
+
